@@ -1,0 +1,39 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: factory_viewtables_000\n"
+"POT-Creation-Date: 2014-04-28 12:53+0400\n"
+"PO-Revision-Date: 2014-05-08 17:12+0400\n"
+"Last-Translator: alex.kovalevv@gmail.com <alex.kovalevv@gmail.com>\n"
+"Language-Team: Alex Kovalev <alex.kovalevv@gmail.com>\n"
+"Language: ru_RU\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.6.4\n"
+"X-Poedit-Basepath: .\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c\n"
+"X-Poedit-SearchPath-0: C:\\webserver\\home\\sociallocker-rus.dev\\www\\wp-"
+"content\\plugins\\sociallocker-next\\libs\\factory\\viewtables\n"
+
+#: C:\Webservers\home\sociallocker-rus.dev\www\wp-content\plugins\sociallocker-next\libs\factory\viewtables\includes\viewtable-columns.class.php:12
+msgid "Title"
+msgstr "Заголовок"
+
+#: C:\Webservers\home\sociallocker-rus.dev\www\wp-content\plugins\sociallocker-next\libs\factory\viewtables\includes\viewtable-columns.class.php:13
+msgid "Shortcode"
+msgstr "Шорткод"
+
+#: C:\Webservers\home\sociallocker-rus.dev\www\wp-content\plugins\sociallocker-next\libs\factory\viewtables\includes\viewtable-columns.class.php:14
+msgid "Bulk Locking"
+msgstr "Массовая блокировка"
+
+#: C:\Webservers\home\sociallocker-rus.dev\www\wp-content\plugins\sociallocker-next\libs\factory\viewtables\includes\viewtable-columns.class.php:15
+msgid "Theme"
+msgstr "Тема"
+
+#: C:\Webservers\home\sociallocker-rus.dev\www\wp-content\plugins\sociallocker-next\libs\factory\viewtables\includes\viewtable-columns.class.php:16
+msgid "Created"
+msgstr "Создан"
