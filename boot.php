@@ -1,30 +1,31 @@
 <?php
 	/**
-	 * Factory Metaboxes
+	 * Factory viewtable
 	 *
-	 * Factory is an internal professional framework developed by OnePress Ltd
-	 * for own needs. Please don't use it to create your own independent plugins.
-	 * In future the one will be documentated and released for public.
+	 * @author Alex Kovalev <alex.kovalevv@gmail.com>
+	 * @copyright (c) 2018, Webcraftic Ltd
 	 *
-	 * @author Paul Kashtanoff <paul@byonepress.com>
-	 * @copyright (c) 2013, OnePress Ltd
-	 *
-	 * @package core
+	 * @package factory-viewtables
 	 * @since 1.0.0
 	 */
 
-	// module provides function only for the admin area
-	if( !is_admin() )
-		return;
+	// Exit if accessed directly
+	if( !defined('ABSPATH') ) {
+		exit;
+	}
 
-	if( defined('FACTORY_VIEWTABLES_000_LOADED') )
+	// module provides function only for the admin area
+	if( !is_admin() ) {
 		return;
+	}
+
+	if( defined('FACTORY_VIEWTABLES_000_LOADED') ) {
+		return;
+	}
 	define('FACTORY_VIEWTABLES_000_LOADED', true);
 
 	define('FACTORY_VIEWTABLES_000_DIR', dirname(__FILE__));
 	define('FACTORY_VIEWTABLES_000_URL', plugins_url(null, __FILE__));
-
-	load_plugin_textdomain('factory_viewtable_000', false, dirname(plugin_basename(__FILE__)) . '/langs');
 
 	#comp merge
 	require(FACTORY_VIEWTABLES_000_DIR . '/viewtable.class.php');
