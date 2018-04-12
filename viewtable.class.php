@@ -15,8 +15,9 @@
 		exit;
 	}
 
-	if( !class_exists('Wbcr_FactoryTypes000_Type') ) {
-		abstract class FactoryViewtables000_Viewtable {
+	if( !class_exists('Wbcr_FactoryViewtables000_Viewtable') ) {
+
+		abstract class Wbcr_FactoryViewtables000_Viewtable {
 
 			/**
 			 * A type used to display the table.
