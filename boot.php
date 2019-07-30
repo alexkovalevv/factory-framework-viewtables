@@ -1,33 +1,35 @@
 <?php
-	/**
-	 * Factory viewtable
-	 *
-	 * @author Alex Kovalev <alex.kovalevv@gmail.com>
-	 * @copyright (c) 2018, Webcraftic Ltd
-	 *
-	 * @package factory-viewtables
-	 * @since 1.0.0
-	 */
+/**
+ * Factory viewtable
+ *
+ * @author        Alex Kovalev <alex.kovalevv@gmail.com>
+ * @since         1.0.0
+ * @package       factory-viewtables
+ * @copyright (c) 2018, Webcraftic Ltd
+ *
+ */
 
-	// Exit if accessed directly
-	if( !defined('ABSPATH') ) {
-		exit;
-	}
+// Exit if accessed directly
+if ( ! defined( 'ABSPATH' ) ) {
+	exit;
+}
 
-	// module provides function only for the admin area
-	if( !is_admin() ) {
-		return;
-	}
+// module provides function only for the admin area
+if ( ! is_admin() ) {
+	return;
+}
 
-	if( defined('FACTORY_VIEWTABLES_000_LOADED') ) {
-		return;
-	}
-	define('FACTORY_VIEWTABLES_000_LOADED', true);
+if ( defined( 'FACTORY_VIEWTABLES_000_LOADED' ) ) {
+	return;
+}
 
-	define('FACTORY_VIEWTABLES_000_DIR', dirname(__FILE__));
-	define('FACTORY_VIEWTABLES_000_URL', plugins_url(null, __FILE__));
+define( 'FACTORY_VIEWTABLES_000_VERSION', '4.0.7' );
+define( 'FACTORY_VIEWTABLES_000_LOADED', true );
 
-	#comp merge
-	require(FACTORY_VIEWTABLES_000_DIR . '/viewtable.class.php');
-	require(FACTORY_VIEWTABLES_000_DIR . '/includes/viewtable-columns.class.php');
-	#endcomp
+define( 'FACTORY_VIEWTABLES_000_DIR', dirname( __FILE__ ) );
+define( 'FACTORY_VIEWTABLES_000_URL', plugins_url( null, __FILE__ ) );
+
+#comp merge
+require( FACTORY_VIEWTABLES_000_DIR . '/viewtable.class.php' );
+require( FACTORY_VIEWTABLES_000_DIR . '/includes/viewtable-columns.class.php' );
+#endcomp
