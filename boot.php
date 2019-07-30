@@ -23,7 +23,7 @@ if ( defined( 'FACTORY_VIEWTABLES_000_LOADED' ) ) {
 	return;
 }
 
-define( 'FACTORY_VIEWTABLES_000_VERSION', '4.0.7' );
+define( 'FACTORY_VIEWTABLES_000_VERSION', '4.0.8' );
 define( 'FACTORY_VIEWTABLES_000_LOADED', true );
 
 define( 'FACTORY_VIEWTABLES_000_DIR', dirname( __FILE__ ) );
